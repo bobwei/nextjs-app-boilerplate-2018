@@ -1,0 +1,14 @@
+{
+  "name": "@project/core",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node lib/index.js",
+    "build": "yarn clean && babel src --out-dir lib --copy-files",
+    "test": "jest",
+    "clean": "rimraf lib"
+  },
+  "main": "lib/index.js",
+  "license": "MIT",
+  "private": true
+}
