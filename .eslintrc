@@ -13,12 +13,5 @@
     "no-underscore-dangle": 0,
     "react/jsx-filename-extension": 0,
     "no-console": 0
-  },
-  "settings": {
-    "import/resolver": {
-      "babel-module": {
-        "extensions": ["*", ".js", ".jsx"]
-      }
-    }
   }
 }
