@@ -3,17 +3,13 @@
   "version": "",
   "description": "",
   "scripts": {
-    "dev": "yarn workspaces run dev",
-    "start": "yarn workspaces run start",
-    "build": "yarn workspaces run build",
-    "test": "yarn workspaces run test",
-    "clean": "yarn workspaces run clean",
-    "postinstall": "yarn build"
+    "dev": "nodemon src/index.js --exec babel-node",
+    "start": "node lib/index.js",
+    "build": "yarn clean && babel src --out-dir lib --copy-files",
+    "test": "jest",
+    "clean": "rimraf lib"
   },
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "main": "lib/index.js",
   "author": "",
   "license": "MIT",
   "engines": {
