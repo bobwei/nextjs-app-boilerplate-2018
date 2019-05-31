@@ -3,9 +3,9 @@
   "version": "",
   "description": "",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "start": "node lib/index.js",
-    "build": "yarn clean && babel src --out-dir lib --copy-files",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build",
     "test": "jest",
     "clean": "rimraf lib"
   },
@@ -40,7 +40,12 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.3.4"
+    "@babel/runtime": "^7.3.4",
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^4.3.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "husky": {
     "hooks": {
